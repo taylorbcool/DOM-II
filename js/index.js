@@ -66,3 +66,10 @@ image.addEventListener('click', () => {
   console.log("start");
   stopPropogration();
 });
+
+// prevent default
+document.querySelectorAll(".nav-link").forEach(el => {
+    el.addEventListener("click", (event) => {
+        event.preventDefault();
+    })
+});
